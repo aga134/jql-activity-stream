@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — JQL Activity Stream</title>
+<style>
+  :root { --fg:#172b4d; --muted:#5e6c84; --bg:#fff; --line:#dfe1e6; --link:#0052cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --muted:#9aa7b8; --bg:#0d1117; --line:#30363d; --link:#6cb0ff; }
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem }
+  h1 { font-size:1.8rem; margin:0 0 .35rem }
+  h2 { font-size:1.15rem; margin:2.25rem 0 .6rem }
+  p.updated { color:var(--muted); margin:0 0 2rem }
+  ul { padding-left:1.2rem } li { margin:.35rem 0 }
+  a { color:var(--link) }
+  code { background:rgba(127,127,127,.15); padding:.1em .35em; border-radius:3px; font-size:.9em }
+  footer { color:var(--muted); font-size:.9rem; margin-top:3rem; border-top:1px solid var(--line); padding-top:1.25rem }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">JQL Activity Stream · Last updated 30 August 2026</p>
+
+  <h2>Summary</h2>
+  <p>JQL Activity Stream stores no data. It has no database, no file storage and no servers of its
+  own, and it sends nothing to anyone. Each time the gadget is displayed it asks Jira for
+  information, shows it, and forgets it.</p>
+
+  <h2>What the app accesses</h2>
+  <p>When you view the gadget, it reads from your own Jira site:</p>
+  <ul>
+    <li>the issues matched by the JQL query or saved filter you configured, with their keys and summaries;</li>
+    <li>the change history of those issues — which field changed, when, and the display name of the person who changed it.</li>
+  </ul>
+  <p>Nothing else. The app requests a single permission, <code>read:jira-work</code>, and no write
+  permission of any kind.</p>
+
+  <h2>Whose permissions apply</h2>
+  <p>Every request is made <strong>as the person viewing the gadget</strong>, never as the app.
+  Jira's own permissions apply unchanged, so the gadget cannot show anyone an issue they could not
+  already open themselves.</p>
+
+  <h2>What is stored</h2>
+  <p>Nothing. The app declares no storage in its manifest — no Forge Key-Value Store, no Forge SQL,
+  no external database, no logs of your data. Information fetched from Jira exists only for the
+  moment it takes to render the gadget.</p>
+  <p>The one thing that persists is the gadget's own configuration — your JQL string, time window,
+  event types and item limit. That is held by Atlassian as part of your dashboard, not by us.</p>
+
+  <h2>What is sent elsewhere</h2>
+  <p>Nothing. The app makes no network requests to any host outside Atlassian. There is no
+  analytics, no tracking and no third-party service. Because it runs entirely on Atlassian's Forge
+  platform, your data never leaves Atlassian's infrastructure.</p>
+
+  <h2>Sub-processors</h2>
+  <p>None, because no data is transferred anywhere.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>There is no retained data to delete. Uninstalling the app removes its gadget configuration with
+  it. Written confirmation is available on request at the address below.</p>
+
+  <h2>Children</h2>
+  <p>The app is a workplace tool sold to organisations and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version is published at this address and the date above is
+  revised.</p>
+
+  <footer>
+    Contact: <a href="mailto:jqlactivitystream@proton.me">jqlactivitystream@proton.me</a> ·
+    <a href="./index.html">Home</a> · <a href="./terms.html">Terms of Use</a>
+  </footer>
+</main>
+</body>
+</html>

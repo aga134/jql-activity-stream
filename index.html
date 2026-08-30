@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JQL Activity Stream</title>
+<style>
+  :root { --fg:#172b4d; --muted:#5e6c84; --bg:#fff; --line:#dfe1e6; --link:#0052cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --muted:#9aa7b8; --bg:#0d1117; --line:#30363d; --link:#6cb0ff; }
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 .5rem }
+  p.lead { color:var(--muted); margin:0 0 2.5rem }
+  ul { padding-left:1.2rem }
+  li { margin:.4rem 0 }
+  a { color:var(--link) }
+  nav { border-top:1px solid var(--line); margin-top:2.5rem; padding-top:1.5rem }
+  footer { color:var(--muted); font-size:.9rem; margin-top:3rem; border-top:1px solid var(--line); padding-top:1.25rem }
+  code { background:rgba(127,127,127,.15); padding:.1em .35em; border-radius:3px; font-size:.9em }
+</style>
+</head>
+<body>
+<main>
+  <h1>JQL Activity Stream</h1>
+  <p class="lead">A Jira Cloud dashboard gadget showing an activity stream scoped by any JQL query or saved filter.</p>
+
+  <p>Jira's built-in Activity Stream gadget can only be pointed at a project or a user. It cannot be
+  filtered by JQL — a request open since 2009 as
+  <a href="https://jira.atlassian.com/browse/JRACLOUD-19155">JRACLOUD-19155</a>. This gadget does that.</p>
+
+  <ul>
+    <li>Point it at any JQL, including <code>filter = "My team"</code>.</li>
+    <li>Choose a window from 24 hours to any time.</li>
+    <li>Filter by status changes, assignee changes, other field changes, or all of them.</li>
+    <li>Noise from ranking, hierarchy and provisioning fields is filtered out; repeated and bulk edits are collapsed.</li>
+  </ul>
+
+  <p>Built on Atlassian Forge. It stores nothing, sends nothing outside Atlassian, and asks for a
+  single read-only permission.</p>
+
+  <nav>
+    <p><a href="./privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="./terms.html">Terms of Use</a></p>
+  </nav>
+
+  <footer>Support: <a href="mailto:jqlactivitystream@proton.me">jqlactivitystream@proton.me</a></footer>
+</main>
+</body>
+</html>
