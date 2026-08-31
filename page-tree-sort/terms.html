@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terms of Use — Page Tree Sort</title>
+<style>
+  :root { --fg:#172b4d; --muted:#5e6c84; --bg:#fff; --line:#dfe1e6; --link:#0052cc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --muted:#9aa7b8; --bg:#0d1117; --line:#30363d; --link:#6cb0ff; }
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem }
+  h1 { font-size:1.8rem; margin:0 0 .35rem }
+  h2 { font-size:1.15rem; margin:2.25rem 0 .6rem }
+  p.updated { color:var(--muted); margin:0 0 2rem }
+  ul { padding-left:1.2rem } li { margin:.35rem 0 }
+  a { color:var(--link) }
+  table { border-collapse:collapse; width:100%; margin:1rem 0 }
+  th,td { border:1px solid var(--line); padding:.5rem .6rem; text-align:left; vertical-align:top }
+  th { font-weight:600 }
+  footer { color:var(--muted); font-size:.9rem; margin-top:3rem; border-top:1px solid var(--line); padding-top:1.25rem }
+</style>
+</head>
+<body>
+<main>
+  <h1>Terms of Use</h1>
+  <p class="updated">Page Tree Sort &middot; Last updated 31 August 2026</p>
+
+  <h2>1. What this app does</h2>
+  <p>Page Tree Sort adds an action to a Confluence page&rsquo;s menu that reorders that page&rsquo;s
+  direct child pages into alphabetical order. It changes the order of pages and nothing else.</p>
+
+  <h2>2. Who may use it</h2>
+  <p>Anyone with permission to move those pages in Confluence. Every request is made as the person
+  using the app, so it grants no access anyone did not already have.</p>
+
+  <h2>3. What it deliberately will not do</h2>
+  <p>The app refuses to act in situations Atlassian documents as capable of losing pages, rather than
+  proceeding and hoping:</p>
+  <ul>
+    <li><strong>If you cannot see every child page, it stops.</strong> Reordering while some siblings
+    are invisible to you can orphan those pages out of the tree.</li>
+    <li>It never reorders against the space root, where pages disappear from the page tree display.</li>
+    <li>If a move fails partway, it stops there rather than leaving a tree in neither the old order nor
+    the new one.</li>
+  </ul>
+  <p>These refusals are intentional and are not defects.</p>
+
+  <h2>4. Reordering is not reversible by the app</h2>
+  <p>Confluence keeps version history for page <em>content</em>, not for the order of pages in a tree.
+  The app shows the resulting order before anything moves so you can decline. Once applied, restoring
+  the previous order means moving the pages back by hand. Please read the preview.</p>
+
+  <h2>5. What we do not promise</h2>
+  <p>The app is provided as is. It runs on Atlassian&rsquo;s Forge platform and inside your Confluence
+  site, neither of which we operate, so no uptime commitment is offered. We do not warrant that it is
+  free of defects, and page ordering is a convenience rather than a system of record.</p>
+
+  <h2>6. Limitation of liability</h2>
+  <p>To the fullest extent permitted by law, liability for any claim arising out of the app is limited
+  to the amount you paid for it in the twelve months before the claim. We are not liable for indirect
+  or consequential loss.</p>
+
+  <h2>7. Support</h2>
+  <p>By email and through the public issue tracker at
+  <a href="https://github.com/aga134/jql-activity-stream/issues">github.com/aga134/jql-activity-stream/issues</a>,
+  in English, on a reasonable-effort basis during normal working days. Security issues are handled
+  within the timelines Atlassian requires of Marketplace partners.</p>
+
+  <h2>8. Data</h2>
+  <p>The app stores no data and sends nothing outside Atlassian. See the
+  <a href="./privacy.html">Privacy Policy</a>.</p>
+
+  <h2>9. Changes</h2>
+  <p>These terms may be updated. The current version is always published at this address with the date
+  above. Continued use after a change means acceptance of it.</p>
+
+  <h2>10. Termination</h2>
+  <p>You may stop using the app at any time by uninstalling it. Uninstalling leaves your pages in
+  whatever order they are in and removes nothing else. We may suspend or discontinue the app, in which
+  case Atlassian&rsquo;s refund rules apply to any unused paid period.</p>
+  <footer>
+    Contact: <a href="mailto:jqlactivitystream@proton.me">jqlactivitystream@proton.me</a> &middot;
+    <a href="./index.html">Home</a> &middot;
+    <a href="./privacy.html">Privacy Policy</a> &middot;
+    <a href="./terms.html">Terms of Use</a>
+  </footer>
+</main>
+</body>
+</html>
