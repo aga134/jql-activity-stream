@@ -27,11 +27,12 @@
 <body>
 <main>
   <h1>Terms of Use</h1>
-  <p class="updated">Page Tree Sort &middot; Last updated 31 August 2026</p>
+  <p class="updated">Page Tree Sort &middot; Last updated 1 September 2026</p>
 
   <h2>1. What this app does</h2>
-  <p>Page Tree Sort adds an action to a Confluence page&rsquo;s menu that reorders that page&rsquo;s
-  direct child pages into alphabetical order. It changes the order of pages and nothing else.</p>
+  <p>Page Tree Sort adds an action to a Confluence page&rsquo;s menu that reorders child pages into
+  alphabetical order &mdash; either that page&rsquo;s own children, or every level below it. It changes
+  the order of pages and nothing else.</p>
 
   <h2>2. Who may use it</h2>
   <p>Anyone with permission to move those pages in Confluence. Every request is made as the person
@@ -41,13 +42,16 @@
   <p>The app refuses to act in situations Atlassian documents as capable of losing pages, rather than
   proceeding and hoping:</p>
   <ul>
-    <li><strong>If you cannot see every child page, it stops.</strong> Reordering while some siblings
-    are invisible to you can orphan those pages out of the tree.</li>
     <li>It never reorders against the space root, where pages disappear from the page tree display.</li>
-    <li>If a move fails partway, it stops there rather than leaving a tree in neither the old order nor
-    the new one.</li>
+    <li><strong>It stops at the first move Confluence refuses.</strong> Every move is made as you, so a
+    page you are not allowed to move simply fails and the app stops there rather than leaving a tree in
+    neither the old order nor the new one.</li>
+    <li>It refuses a parent with more than 200 children rather than half-sorting it.</li>
   </ul>
   <p>These refusals are intentional and are not defects.</p>
+  <p>On pages you cannot see: the result is correct for the pages you can see and untouched for any you
+  cannot. Confluence exposes no way for an app acting as you to learn that a restricted page exists
+  &mdash; which is what restricting it means.</p>
 
   <h2>4. Reordering is not reversible by the app</h2>
   <p>Confluence keeps version history for page <em>content</em>, not for the order of pages in a tree.
