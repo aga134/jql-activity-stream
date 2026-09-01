@@ -25,7 +25,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">JQL Activity Stream · Last updated 30 August 2026</p>
+  <p class="updated">JQL Activity Stream · Last updated 1 September 2026</p>
 
   <h2>Summary</h2>
   <p>JQL Activity Stream stores no data. It has no database, no file storage and no servers of its
@@ -36,7 +36,10 @@
   <p>When you view the gadget, it reads from your own Jira site:</p>
   <ul>
     <li>the issues matched by the JQL query or saved filter you configured, with their keys and summaries;</li>
-    <li>the change history of those issues — which field changed, when, and the display name of the person who changed it.</li>
+    <li>the change history of those issues: who made each change — their display name and their
+    Atlassian account ID — which field changed, <strong>the value before and after the change</strong>,
+    and when. Those before-and-after values are whatever was in the field, so for a change of assignee
+    or reporter they are themselves people&rsquo;s names.</li>
   </ul>
   <p>Nothing else. The app requests a single permission, <code>read:jira-work</code>, and no write
   permission of any kind.</p>
